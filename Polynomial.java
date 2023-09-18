@@ -17,12 +17,12 @@ public class Polynomial {
 		if (this.coeff.length >= in_poly.coeff.length) {
 			out_poly = new Polynomial(this.coeff);
 			for (int i = 0; i < in_poly.coeff.length; i++)
-			out_poly.coeff[i] = out_poly.coeff[i] + in_poly.coeff[i];
+				out_poly.coeff[i] = out_poly.coeff[i] + in_poly.coeff[i];
 		}
 		else {
 			out_poly = new Polynomial(in_poly.coeff);
 			for (int i = 0; i < this.coeff.length; i++)
-			out_poly.coeff[i] = out_poly.coeff[i] + this.coeff[i];
+				out_poly.coeff[i] = out_poly.coeff[i] + this.coeff[i];
 		}
 
 		return out_poly;
